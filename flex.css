@@ -107,10 +107,10 @@ main{
 }
 
 @media( max-width: 375px) {
-    main{
+    .one, .two, .three{
         flex-direction: column;
         width: 80%;
         height: auto;
-        border-radius: 0 0 0 0; 
+        border-radius: 0; 
     }
 }
