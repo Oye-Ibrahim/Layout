@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    max-width: 1440px;
+}
+
+main{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin: 100px auto;
+    
+}
+
+.heading{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.one{
+    background-color: hsl(31, 77%, 52%);
+    padding: 44px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.two{
+    background-color: hsl(184, 100%, 22%);
+    padding: 44px;
+    width: 100%;
+}
+
+.three{
+    background-color: hsl(179, 100%, 13%);
+    padding: 44px;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+/* Buttons */
+
+.btn{
+    background-color:hsl(0, 0%, 95%);
+    padding: 8px;
+    border-radius: 24px;
+    text-decoration: none;
+    
+    
+}
+.one .btn{
+    color: hsl(31, 77%, 52%);
+}
+
+.two .btn{
+    color: hsl(184, 100%, 22%);
+}
+
+.three .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+/* hover and active states */
+
+.one .btn:hover, .one .btn:active{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) 1px solid;
+}
+
+.two .btn:hover, .two .btn:active{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) 1px solid;
+}
+
+.three .btn:hover, .three .btn:active{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: hsl(0, 0%, 95%) 1px solid;
+}
+
+.heading{
+    padding: 15px;
+}
+
+.disc{
+    margin: 0px auto 70px;
+    width: auto;
+    line-height: 1.4rem;
+}
+
+@media( max-width: 375px) {
+    main{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        border-radius: 0 0 0 0; 
+    }
+}
